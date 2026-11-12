@@ -1,0 +1,436 @@
+/*
+|---------------------------------------------------------
+| Responsive When < 1380PX                               
+|---------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 1380px) {
+
+    /*
+    |---------------------------------------------------------
+    | Main Header                                      1380PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .main-header-bg-circle-1,
+    .main-header-bg-circle-2 {
+        display: none;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Features Cards                                   1380PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-features-card-img {
+        width: 80px;
+        height: 80px;
+        background-size: 80px;
+    }
+
+}
+
+/*
+|---------------------------------------------------------
+| Responsive When < 1100PX                               
+|---------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 1100px) {
+
+    /*
+    |---------------------------------------------------------
+    | Main Header                                      1100PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .main-nav-ui {
+        padding: 24px 36px;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Main Menu                                        1100PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .main-nav {
+        font-size: 14px;
+    }
+
+    .main-nav ul {
+        gap: 36px;
+    }
+
+}
+
+/*
+|---------------------------------------------------------
+| Responsive When < 1024PX                               
+|---------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 1024px) {
+
+    /*
+    |---------------------------------------------------------
+    | Main Header                                      1024PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .header-ui {
+        gap: 24px;
+        padding: 24px 0;
+    }
+
+    .header-ui-logo-img {
+        width: 120px;
+        height: auto;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Main Menu                                        1024PX
+    |---------------------------------------------------------
+    |
+    */
+    
+    .hamburger-label {
+        display: block;
+        visibility: visible;
+    }
+    
+    .hamburger-icon {
+        width: 40px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    
+    .hamburger-icon:before, 
+    .hamburger-icon div, 
+    .hamburger-icon:after {
+        background-color: #fff;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+        transition: transform .3s ease-in-out;
+    }
+    
+    .hamburger:checked + .hamburger-label > .hamburger-icon:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+        
+    .hamburger:checked + .hamburger-label > .hamburger-icon div {
+        transform: scale(0);
+    }
+        
+    .hamburger:checked + .hamburger-label > .hamburger-icon:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+    
+    .main-nav {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .main-nav ul {
+        display: block;
+        width: 90%;
+        padding: 0;
+        margin: 30px 0 0 0;
+        font-size: 18px;
+        text-align: center;
+        list-style: none;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 0 0 36px 36px;
+        border: 1px solid #414171;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hamburger:checked ~ .main-nav {
+        display: block;
+        visibility: visible;
+    }
+    
+    .main-nav ul li {
+        margin: 0;
+        padding: 24px 40px;
+        background: rgb(25, 25, 60);  
+    }
+
+    .main-nav ul li:first-child {
+        padding-top: 36px;
+    }
+
+    .main-nav ul li:last-child {
+        border-radius: 0 0 36px 36px;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Main Header                                      1024PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .main-header-bg-circle-2 {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Hero Section                                     1024PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .hero-ui {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-ui-h2 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+
+    .hero-ui-lft-txt {
+        text-align: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .hero-ui-img {
+        display: none;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Features Cards                                   1024PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /*
+    |---------------------------------------------------------
+    | About Brand                                      1024PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-about-ui {
+        grid-template-columns: 1fr;
+    }
+
+    .home-about-rgt {
+        max-width: 624px;
+        aspect-ratio: 4 / 3;
+        border-radius: 36px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../media/images/about-img.webp');
+    }
+
+    /*
+    |---------------------------------------------------------
+    | FAQ                                              1284PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .faq-container {
+        gap: 12px;
+        grid-template-columns: 1fr;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        line-height: 26px;
+        min-height: unset;
+    }
+
+}
+
+/*
+|---------------------------------------------------------
+| Responsive When < 768PX                         
+|---------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 768px) {
+
+    /*
+    |---------------------------------------------------------
+    | Global Styles                                     768PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .padd-t-s { padding-top: 80px; }
+    .padd-b-m { padding-bottom: 80px; }
+    .padd-tb-xl-m { padding: 120px 0 80px; }
+
+    /*
+    |---------------------------------------------------------
+    | Main Header                                       768PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .main-nav-ui {
+        padding: 18px 36px;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Main Menu                                         768PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .nav-ui-logo-a {
+        height: 24px;
+    }
+
+    .nav-ui-logo-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .main-nav ul {
+        margin: 22px 0 0 0;
+    }
+
+    .lang-btn-txt {
+        display: none;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Main Content                                      768PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-section-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Features Cards                                    768PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-features-grid {
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-features-card {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .home-features-card-img {
+        width: 44px;
+        height: 44px;
+        aspect-ratio: 1 / 1;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    /* .home-features-card-txt {
+        font-size: 14px;
+        line-height: 24px;
+    } */
+    
+}
+
+/*
+|---------------------------------------------------------
+| Responsive When < 568PX                         
+|---------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 568px) {
+
+    /*
+    |---------------------------------------------------------
+    | Global Styles                                     568PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .padd-tb-xl-m { padding: 80px 0 80px; }
+
+    /*
+    |---------------------------------------------------------
+    | Hero Section                                      568PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .hero-ui-h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .hero-btns {
+        gap: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*
+    |---------------------------------------------------------
+    | Features Cards                                    568PX
+    |---------------------------------------------------------
+    |
+    */
+
+    .home-features-card-img {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-image: unset !important;
+        background-color: #ffca3a;
+    }
+
+    .home-features-card-txt {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}

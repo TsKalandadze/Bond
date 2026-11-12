@@ -1,0 +1,125 @@
+/*
+|---------------------------------------------------------
+| Main Layout                                      1284PX
+|---------------------------------------------------------
+|
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.container {
+    width: 96%;
+    max-width: 1284px;
+    margin: 0 auto;
+}
+
+.main-footer {
+    padding: 100px 0 60px;
+    position: relative;
+    background: lightslategray;
+}
+
+/*
+|---------------------------------------------------------
+| Global Styles                                    1284PX
+|---------------------------------------------------------
+|
+*/
+
+:root {
+
+    /* Colors */
+    
+    --color-main-purple: #121129;
+    
+}
+
+/* Margins and Padings */
+
+.padd-t-s { padding-top: 100px; }
+.padd-b-m { padding-bottom: 120px; }
+.padd-tb-m { padding: 100px 0; }
+.padd-tb-xl-m { padding: 180px 0 120px; }
+
+/* Grid Styles */
+
+.grid {
+    display: grid;
+    gap: 36px;
+}
+
+.grid-1 { grid-template-columns: 1fr; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+.grid-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-7 { grid-template-columns: repeat(7, 1fr); }
+.grid-8 { grid-template-columns: repeat(8, 1fr); }
+.grid-9 { grid-template-columns: repeat(9, 1fr); }
+.grid-10 { grid-template-columns: repeat(10, 1fr); }
+.grid-11 { grid-template-columns: repeat(11, 1fr); }
+.grid-12 { grid-template-columns: repeat(12, 1fr); }
+
+/* Typography Styles */
+
+.font-14 { font-size: 14px; }
+.font-15 { font-size: 15px; }
+.font-16 { font-size: 16px; }
+.font-18 { font-size: 18px; }
+.font-24 { font-size: 24px; }
+
+.lh-24 { line-height: 24px; }
+.lh-26 { line-height: 26px; }
+.lh-28 { line-height: 28px; }
+
+.txt-case-on {
+    text-transform: uppercase;
+    font-feature-settings: "case" on;
+}
+
+.link-line {
+    text-decoration: none;
+}
+
+.link-line:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+
+.btn-main {
+    color: #fff;
+    text-align: center;
+    
+    padding: 14px 18px;
+    border-radius: 100px;
+    display: flex;
+    min-width: 168px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #F27336;
+}
+
+.btn-solid {
+    background-color: #F27336;
+}
+
+.btn-stroke {
+    border: 2px solid #F27336;
+}
+
