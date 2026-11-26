@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'LGVtavdrigina';
+    src: url('../fonts/LGVtavdrigina.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Georgian';
+    src: url('../fonts/NotoSansGeorgian-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Georgian';
+    src: url('../fonts/NotoSansGeorgian-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Georgian';
+    src: url('../fonts/NotoSansGeorgian-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-main {
+    font-family: 'LGVtavdrigina';
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+.font-regular,
+.font-regular-m,
+.font-regular-b {
+    font-display: swap;
+    font-style: normal;
+    font-family: 'Noto Sans Georgian';
+}
+
+.font-regular {
+    font-weight: normal;
+}
+
+.font-regular-m {
+    font-weight: 500;
+}
+
+.font-regular-b {
+    font-weight: bold;
+}
+
+
+
+
